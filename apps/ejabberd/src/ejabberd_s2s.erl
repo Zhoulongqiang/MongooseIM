@@ -63,8 +63,8 @@
 -include("jlib.hrl").
 -include("ejabberd_commands.hrl").
 
--define(DEFAULT_MAX_S2S_CONNECTIONS_NUMBER, 1).
--define(DEFAULT_MAX_S2S_CONNECTIONS_NUMBER_PER_NODE, 1).
+-define(DEFAULT_MAX_S2S_CONNECTIONS_NUMBER, 100).
+-define(DEFAULT_MAX_S2S_CONNECTIONS_NUMBER_PER_NODE, 100).
 
 -type fromto() :: {'global' | ejabberd:server(), ejabberd:server()}.
 -record(s2s, {
